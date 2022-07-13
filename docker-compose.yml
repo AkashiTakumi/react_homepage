@@ -5,7 +5,8 @@ services:
     build: .
     tty: true
     environment:
-      - NODE_ENV=development
+      #- NODE_ENV=development
+      - CHOKIDAR_USEPOLLING=true
     # ローカルPCのカレントディレクトリをdockerコンテナの/usr/src/appにマウントする
     volumes:
       - ./:/usr/src/app
