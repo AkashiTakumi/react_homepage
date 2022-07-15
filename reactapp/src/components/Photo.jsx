@@ -1,3 +1,4 @@
+import { Grid } from "@mui/material";
 import React from "react";
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
@@ -9,11 +10,13 @@ const EnhancedSwipeableViews = autoPlay(SwipeableViews);
 
 const Photo = () => {
     return (
-        <EnhancedSwipeableViews enableMouseEvents interval={10000}>
-            <img src={mypic_1} alt="mypic_1" width="1000" height="682"/>
-            <img src={mypic_2} alt="mypic_2" width="1000" height="682"/>
-            <img src={mypic_3} alt="mypic_3" width="1000" height="682"/>
-        </EnhancedSwipeableViews>
+        <Grid container alignItems="center" justify="center">
+            <EnhancedSwipeableViews enableMouseEvents interval={10000} style={{}}>
+                <img src={mypic_1} alt="mypic_1" width="1000" height="682"/>
+                <img src={mypic_2} alt="mypic_2" width="1000" height="682"/>
+                <img src={mypic_3} alt="mypic_3" width="1000" height="682"/>
+            </EnhancedSwipeableViews>
+        </Grid>
     );
 }
 

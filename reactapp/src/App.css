@@ -1,4 +1,12 @@
 .App {
+  /* text-align: center; */
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: lightcyan;
+}
+
+Photo {
   text-align: center;
 }
 
@@ -26,6 +34,10 @@
 
 .App-link {
   color: #61dafb;
+}
+
+SymposiumList {
+  width: 90%;
 }
 
 @keyframes App-logo-spin {
